@@ -6,6 +6,6 @@ Too much boring content in your Facebook/Twitter/Google+ News Feed? TopNewsFeed 
 Bookmarklet
 -----------
 
-Drag the following bookmarklet to your bookmarks bar. Then go to any Facebook/Twitter/Google+/Instagram profile and run it. By clicking the gear icon on the right, you can choose how many News Feed pages will be requested.
+GitHub blocks publishing bookmarklets, so you have to add a new bookmark in your bookmarks bar and replace its URL with the following code. Then go to any Facebook/Twitter/Google+/Instagram profile and run it. By clicking the gear icon on the right, you can choose how many News Feed pages will be requested.
 
-[TopNewsFeed](javascript:(function(){var s=document.createElement("script");s.src="https://niutech.github.io/topnewsfeed/topnewsfeed.min.js";document.body.appendChild(s);})())
+    javascript:(function(){var s=document.createElement("script");s.src='https://niutech.github.io/topnewsfeed/topnewsfeed.min.js';document.body.appendChild(s);})()
