@@ -38,25 +38,27 @@
         var modal = document.createElement('div');
         var close = document.createElement('a');
         var settings = document.createElement('a');
-        var header = document.createElement('h1');
+        var header = document.createElement('a');
         progress = document.createElement('progress');
         //styles
         overlay.style.cssText = 'position:fixed;top:0;left:0;bottom:0;right:0;z-index:99999;background-color:rgba(255,255,255,0.7);';
         modal.style.cssText = 'position:fixed;top:50%;left:50%;width:260px;height:80px;margin-top:-60px;margin-left:-150px;padding:20px;background-color:#fff;border:1px solid;border-color:#e5e6e9 #dfe0e4 #d0d1d5;border-radius:3px;text-align:center;';
         close.style.cssText = 'position:fixed;top:30px;right:10px;font-size:60px;text-decoration:none;color:inherit;';
-        settings.style.cssText = 'position:fixed;top:90px;right:10px;font:40px "Segoe UI Symbol","DejaVu Sans",FreeSerif,sans-serif;text-decoration:none;color:inherit;';
-        header.style.cssText = 'font-size:20px;margin-bottom:20px;'
-        progress.style.cssText = 'width:100%;height:30px;';
+        settings.style.cssText = 'position:fixed;top:90px;right:10px;font:35px Webdings,sans-serif;text-decoration:none;color:inherit;';
+        header.style.cssText = 'font-size:20px;text-decoration:none;color:inherit;'
+        progress.style.cssText = 'width:100%;height:20px;margin-top:25px;';
         //contents
         close.innerHTML = '×';
-        settings.innerHTML = '⚙';
-        header.innerHTML = 'Loading TopNewsFeed';
+        settings.innerHTML = '@';
+        header.innerHTML = 'Loading Top News Feed';
         //handlers
         close.onclick = closeModal;
         settings.onclick = showSettings;
         //attributes
         close.href = '#';
         settings.href = '#';
+	header.href = 'https://niutech.github.io/topnewsfeed/';
+	header.target = '_blank';
         progress.value = 0;
         progress.max = MAX_PAGES;
         //join them all
