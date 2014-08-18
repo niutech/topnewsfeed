@@ -10,14 +10,14 @@ body {font-size: 16px;line-height: 1.7em;color: #7f8c8d;}
 h1 {font-size: 250%;font-weight: bold;color: white;border: 3px solid white;padding: 1em 1.6em;font-weight: 100;border-radius: 5px;line-height: 1em;text-transform: uppercase;}
 h2 {color: #1f8dd6;}
 .splash-container {background: #1f8dd6;z-index: 1;overflow: hidden;width: 100%;height: 88%;top: 0;left: 0;position: fixed !important;}
-.splash {width: 80%;height: 50%;margin: auto;position: absolute;top: 0;left: 0;bottom: 0;right: 0;text-align: center;}
+.splash {width: 80%;height: 70%;margin: auto;position: absolute;top: 0;left: 0;bottom: 0;right: 0;text-align: center;}
 .splash-subhead {color: white;letter-spacing: 0.05em;opacity: 0.8;}
 a {color: inherit;}
 a.pure-button-primary {padding: 0.5em 2em;background: white;color: #1f8dd6;border-radius: 5px;font-size: 120%;text-decoration: none;}
+.preview {margin-top: 100px;max-width:100%;}
 .content-wrapper {position: absolute;top: 87%;width: 100%;min-height: 12%;z-index: 2;background: white;}
 .content {padding: 1em;}
 .footer {padding: 1em;background: #111;text-align: center;}
-td {vertical-align: middle;}
 </style>
 </head>
 <body>
@@ -26,6 +26,7 @@ td {vertical-align: middle;}
         <h1>Top News Feed bookmarklet</h1>
         <p class="splash-subhead">Find the best posts in your News Feed. Just drag this bookmarklet to your bookmarks bar:</p>
         <p><a href="javascript:(function()%7Bvar%20a=document.createElement(%22link%22);a.rel=%22stylesheet%22;a.href=%22//niutech.github.io/topnewsfeed/topnewsfeed.css%22;a.onload=function()%7Bvar%20a=b.currentStyle?b.currentStyle.fontFamily:document.defaultView.getComputedStyle(b,null).fontFamily;eval(a.replace(/%5E%5B%22'%5D%7C%5C%5C%7C%5B%22'%5D$/g,%22%22))%7D;document.body.appendChild(a);var%20b=document.createElement(%22div%22);b.id=%22topnewsfeed%22;document.body.appendChild(b)%7D)()" class="pure-button pure-button-primary">Top News Feed</a></p>
+	<p><img src="topnewsfeed.png" alt="" class="preview"></p>
     </div>
 </div>
 <div class="content-wrapper">
@@ -35,7 +36,7 @@ td {vertical-align: middle;}
 	<h2>How to use it</h2>
 	<p>Drag the Top News Feed bookmarklet above to your bookmarks bar, then go to any Facebook/Twitter/Google+/Instagram profile and run it. By clicking the settings icon on the right, you can choose how many News Feed pages will be requested.</p>
 	<h2>Like it</h2>
-	<table><tr><td><iframe src="https://mdo.github.io/github-buttons/github-btn.html?user=niutech&repo=topnewsfeed&type=watch&count=true" height="30" width="118" frameborder="0" scrolling="0" style="width:118px; height: 30px;" allowTransparency="true"></iframe></td><td><a href="https://twitter.com/share" class="twitter-share-button" data-url="https://niutech.github.io/topnewsfeed/">Tweet</a><script>(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } })(document, 'script', 'twitter-wjs');</script></td><td><div class="g-plusone" data-size="medium" data-href="https://niutech.github.io/topnewsfeed/"></div><script>(function() {var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true; po.src = 'https://apis.google.com/js/plusone.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);})();</script></td><td><iframe src="//www.facebook.com/plugins/like.php?href=https://niutech.github.io/topnewsfeed/&send=false&layout=button_count&width=120&show_faces=true&font&colorscheme=light&action=like&height=20" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:120px; height:20px;" allowTransparency="true"></iframe></td></tr></table>
+	<table><tr><td><iframe src="https://mdo.github.io/github-buttons/github-btn.html?user=niutech&repo=topnewsfeed&type=watch&count=true" height="20" width="118" frameborder="0" scrolling="0" style="width:118px; height: 20px;" allowTransparency="true"></iframe></td><td><a href="https://twitter.com/share" class="twitter-share-button" data-url="https://niutech.github.io/topnewsfeed/">Tweet</a><script>(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } })(document, 'script', 'twitter-wjs');</script></td><td><div class="g-plusone" data-size="medium" data-href="https://niutech.github.io/topnewsfeed/"></div><script>(function() {var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true; po.src = 'https://apis.google.com/js/plusone.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);})();</script></td><td><iframe src="//www.facebook.com/plugins/like.php?href=https://niutech.github.io/topnewsfeed/&send=false&layout=button_count&width=120&show_faces=true&font&colorscheme=light&action=like&height=20" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:120px; height:20px;" allowTransparency="true"></iframe></td></tr></table>
     </div>
     <div class="footer">
         &copy; 2014 Jerzy Głowacki. Source code on <a href="https://github.com/niutech/topnewsfeed">GitHub</a>
