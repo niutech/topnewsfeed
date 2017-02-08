@@ -10,14 +10,20 @@
         },
         'twitter.com': {
             item: '[data-item-type="tweet"]',
-            rank: '.ProfileTweet-action--favorite .ProfileTweet-actionCountForAria',
-            more: '.try-again-after-whale'
+            rank: '.ProfileTweet-action--favorite .ProfileTweet-actionCountForAria'
         },
         'google.com': {
             item: 'c-wiz',
-            rank: '[data-count]',
-            more: '[data-waitmessage]'
-        }  
+            rank: '[data-count]'
+        },
+        'soundcloud.com': {
+            item: '.soundList__item',
+            rank: '.sc-button-like'
+        },
+        'mixcloud.com': {
+            item: '.card',
+            rank: '[m-ajax-toggle-type="favorite"]'
+        }
     };
     var overlay;
     var progress;
@@ -77,11 +83,8 @@
     }
     
     function loadMore() {
-        //load more pages by invoking a click on Show More button, otherwise close modal
-        var more = document.querySelector((SELECTORS[hostname] || {}).more);
-        if (!more)
-            return closeModal();
-        more.click();
+        //load more pages by scrolling to the bottom of a page
+        document.body.scrollIntoView(false);
         progress.value++;
     }
     
