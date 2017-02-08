@@ -34,6 +34,7 @@
         //stop requesting and process what we already have
         clearInterval(timer);
         processItems();
+        document.body.scrollIntoView();
         document.body.removeChild(overlay);
         return false;
     }
