@@ -16,6 +16,10 @@
             item: 'c-wiz',
             rank: '[data-count]'
         },
+        'vk.com': {
+            item: '.post',
+            rank: '.post_like_count'
+        },
         'soundcloud.com': {
             item: '.soundList__item',
             rank: '.sc-button-like'
@@ -99,9 +103,9 @@
             //compare just digits
             var ranka = a.querySelector((SELECTORS[hostname] || {}).rank) || {};
             var rankb = b.querySelector((SELECTORS[hostname] || {}).rank) || {};
-            var texta = ranka.textContent || '0';
-            var textb = rankb.textContent || '0';
-            return texta.replace(/\D/g, '') - textb.replace(/\D/g, '');
+            var texta = (ranka.textContent || '0').replace(/(\d+\.\d)k/g, '$100').replace(/(\d+)k/g, '$1000').replace(/\D/g, '');
+            var textb = (rankb.textContent || '0').replace(/(\d+\.\d)k/g, '$100').replace(/(\d+)k/g, '$1000').replace(/\D/g, '');
+            return texta - textb;
         });
         for (var i in items) {
             //prepend items on top and log ranks
