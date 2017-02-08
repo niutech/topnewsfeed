@@ -25,7 +25,7 @@ a.pure-button-primary {padding: 0.5em 2em;background: white;color: #1f8dd6;borde
     <div class="splash">
 	<h1>Top News Feed bookmarklet</h1>
 	<p class="splash-subhead">Find the best posts in your News Feed. Just drag this bookmarklet to your bookmarks bar:</p>
-	<p><a href="javascript:(function()%7Bvar%20a%3Ddocument.createElement(%22link%22)%3Ba.rel%3D%22stylesheet%22%3Ba.href%3D%22%2F%2Fniutech.github.io%2Ftopnewsfeed%2Ftopnewsfeed.css%22%3Ba.onload%3Dfunction()%7Bvar%20a%3D(b.currentStyle%7C%7CgetComputedStyle(b%2Cnull)).fontFamily%3Beval(a.substring(1%2Ca.length-1).replace(%2F%5C%5C(%5B%5C%5C%27%5D)%2Fg%2C%22%241%22))%7D%3Bdocument.body.appendChild(a)%3Bvar%20b%3Ddocument.createElement(%22div%22)%3Bb.id%3D%22topnewsfeed%22%3Bdocument.body.appendChild(b)%7D)()" class="pure-button pure-button-primary">Top News Feed</a></p>
+	<p><a href="javascript:(function()%7Bvar%20a%3Ddocument.createElement(%22link%22)%3Ba.rel%3D%22stylesheet%22%3Ba.href%3D%22%2F%2Fniutech.github.io%2Ftopnewsfeed%2Ftopnewsfeed.css%22%3Ba.onload%3Dfunction()%7Bvar%20a%3D(getComputedStyle(b)).fontFamily%3Beval(a.substring(1%2Ca.length-1).replace(%2F%5C%5C(.)%2Fg%2C%22%241%22))%7D%3Bdocument.body.appendChild(a)%3Bvar%20b%3Ddocument.createElement(%22div%22)%3Bb.id%3D%22topnewsfeed%22%3Bdocument.body.appendChild(b)%7D)()" class="pure-button pure-button-primary">Top News Feed</a></p>
 	<p><img src="topnewsfeed.png" alt="" class="preview"></p>
     </div>
 </div>
