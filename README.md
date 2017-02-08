@@ -1,12 +1,12 @@
 Top News Feed
 =============
 
-Too much boring content in your Facebook/Twitter/Google+ News Feed? Top News Feed helps you find the best posts in the News Feed and Profiles, sorted by likes. No server-side processing involved, no privacy concerns!
+Too much boring content in your Facebook/Twitter/VK/Google+ News Feed? Top News Feed helps you find the best posts in the News Feed and Profiles, sorted by likes. No server-side processing involved, no privacy concerns!
 
 Bookmarklet
 -----------
 
-Get the Top News Feed bookmarklet from the following web page. Drag it to your bookmarks bar, then go to any Facebook/Twitter/Google+ profile and run it. By clicking the settings icon on the right, you can choose how many News Feed pages will be requested.
+Get the Top News Feed bookmarklet from the following web page. Drag it to your bookmarks bar, then go to any Facebook/Twitter/VK/Google+/Soundcloud/Mixcloud profile and run it. By clicking the settings icon on the right, you can choose how many News Feed pages will be requested.
 
 **[Click here to get Top News Feed](https://niutech.github.io/topnewsfeed/)**
 
