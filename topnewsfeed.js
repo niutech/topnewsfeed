@@ -103,8 +103,8 @@
             //compare just digits
             var ranka = a.querySelector((SELECTORS[hostname] || {}).rank) || {};
             var rankb = b.querySelector((SELECTORS[hostname] || {}).rank) || {};
-            var texta = (ranka.textContent || '0').replace(/(\d+\.\d)k/g, '$100').replace(/(\d+)k/g, '$1000').replace(/\D/g, '');
-            var textb = (rankb.textContent || '0').replace(/(\d+\.\d)k/g, '$100').replace(/(\d+)k/g, '$1000').replace(/\D/g, '');
+            var texta = (ranka.textContent || '0').replace(/(\d+\.\d)k/gi, '$100').replace(/(\d+)k/gi, '$1000').replace(/\D/g, '');
+            var textb = (rankb.textContent || '0').replace(/(\d+\.\d)k/gi, '$100').replace(/(\d+)k/gi, '$1000').replace(/\D/g, '');
             return texta - textb;
         });
         for (var i in items) {
